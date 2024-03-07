@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	//rand.Seed(time.Now().UnixNano()) // Seed the rng
-	problem.GenerateInColumns(1, 100, 10, "d")
+
+	problem.Generate(1, 100, 10, "d")
 
 	problem.PrintAnswerKey()
 
@@ -15,7 +15,7 @@ func main() {
 
 	n.Value = 27
 
-	n.NameNum()
+	n.String()
 
 	fmt.Println(n.Name)
 
